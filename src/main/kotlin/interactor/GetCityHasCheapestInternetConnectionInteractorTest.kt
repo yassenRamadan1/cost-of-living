@@ -2,29 +2,53 @@ package interactor
 
 import dataSource.CsvDataSource
 import dataSource.utils.CsvParser
-import org.testng.annotations.Test
-import org.junit.jupiter.api.BeforeAll
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.TestInstance
+import org.testng.annotations.BeforeTest
+import org.testng.annotations.Test
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 internal class GetCityHasCheapestInternetConnectionInteractorTest {
 
-    private lateinit var getCityHasCheapestInternetTest:
-            GetCityHasCheapestInternetConnectionInteractor
+    lateinit var getCityHasCheapestInternetConnectionTest: GetCityHasCheapestInternetConnectionInteractor
 
-    @BeforeAll
+    @BeforeTest
     fun setup() {
         val csvParser = CsvParser()
         val dataSource: CostOfLivingDataSource = CsvDataSource(csvParser)
-        getCityHasCheapestInternetTest = GetCityHasCheapestInternetConnectionInteractor(dataSource)
+        getCityHasCheapestInternetConnectionTest = GetCityHasCheapestInternetConnectionInteractor(dataSource)
     }
 
     @Test
-    fun should_returnCheapestCityIndex_when_correctInputs() {
-        //given
+    fun should_returnCorrectDivideSummation_when_bothInputsArePositive() {
+        //given two positive numbers
+        val number1 = 50f
+        val number2 = 25f
+        //when find the divide summation
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        //then check result
+        assertEquals(2, divideSummation)
+    }
 
-        //then
+    @Test
+    fun should_returnCorrectNegativeDivideSummation_when_firstNumberIsNegative() {
+        //given first number is negative second number is positive
+        val number1 = -50f
+        val number2 = 25f
+        //when find the divide summation
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        //then check result
+        assertEquals(-2, divideSummation)
+    }
 
-        //when
+    @Test
+    fun should_returnCorrectNegativeDivideSummation_when_secondNumberIsNegative() {
+        //given first number is positive second number is negative
+        val number1 = 50f
+        val number2 = -25f
+        //when find the divide summation
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        //then check result
+        assertEquals(-2, divideSummation)
     }
 }

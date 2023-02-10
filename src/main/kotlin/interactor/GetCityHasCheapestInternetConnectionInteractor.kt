@@ -10,8 +10,8 @@ class GetCityHasCheapestInternetConnectionInteractor(
         return null
     }
 
-    fun getCheapestIndexCity(list: List<CityEntity>, dividedSum: Float): Int {
-        return 0
+    fun getAverageOfCities(n1: Float, n2: Float): Float {
+        return 0f
     }
 
     private fun excludeNullSalariesAndLowQualityData(city: CityEntity): Boolean {
