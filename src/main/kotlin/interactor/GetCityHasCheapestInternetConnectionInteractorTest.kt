@@ -2,7 +2,6 @@ package interactor
 
 import dataSource.CsvDataSource
 import dataSource.utils.CsvParser
-import model.CityEntity
 import org.testng.annotations.Test
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance
@@ -22,7 +21,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
 
     @Test
     fun should_returnCheapestCityIndex_when_correctInputs() {
-        //given correct list and sum of internet divided by salary
+        //given
 
         //then
 
