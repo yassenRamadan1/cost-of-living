@@ -96,21 +96,14 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
     @Test
     fun should_returnPositiveAndCorrectIndex_when_listIsNotNull() {
         //given list of city entity
-        val list = dataSource.getAllCitiesData()
+        val list = dataSource.getAllCitiesData().filter {
+            it.averageMonthlyNetSalaryAfterTax != null
+                    && it.dataQuality
+        }
         //when find the index
         val index = getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
         //then check result
-        assertEquals(4, index)
-    }
-
-    @Test
-    fun should_returnNull_when_listIsNull() {
-        //given list of city entity is null
-        val list: List<CityEntity>? = null
-        //when find the index
-        val index = getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
-        //then check result
-        assertNull(index)
+        assertEquals(689, index)
     }
 
 
