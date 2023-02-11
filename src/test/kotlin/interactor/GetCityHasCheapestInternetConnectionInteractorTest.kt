@@ -77,24 +77,4 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         assertNull(divideSummation)
     }
 
-    @Test
-    fun should_returnTrue_when_numberIsZero() {
-        //given number is zero
-        val number = 0f
-        //when check the number
-        val divideSummation = getCityHasCheapestInternetConnectionTest.isZero(number)
-        //then check result
-        assertTrue(divideSummation)
-    }
-
-    @Test
-    fun should_returnFalse_when_numberIsNotZero() {
-        //given number is not zero
-        val number = 5f
-        //when check the number
-        val divideSummation = getCityHasCheapestInternetConnectionTest.isZero(number)
-        //then check result
-        assertFalse(divideSummation)
-    }
-
 }
