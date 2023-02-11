@@ -11,7 +11,10 @@ class GetCityHasCheapestInternetConnectionInteractor(
     }
 
     fun getThePercentage(n1: Float, n2: Float): Float? =
-        null
+        if (isZero(n2))
+            null
+        else
+            n1 / n2
 
     fun isZero(n: Float): Boolean = n == 0f
 
