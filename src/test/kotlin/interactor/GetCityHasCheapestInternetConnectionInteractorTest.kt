@@ -82,7 +82,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
     @Test
     fun should_returnNegativeInfinity_when_firstNumberIsNegativeAndSecondNumberIsZero() {
         //given second number is zero
-        val number1 = 50f
+        val number1 = -50f
         val number2 = 0f
         //when find the divide summation
         val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(
