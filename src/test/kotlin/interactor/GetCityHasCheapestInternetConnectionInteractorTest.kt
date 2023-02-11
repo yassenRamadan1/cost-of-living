@@ -67,14 +67,18 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
     }
 
     @Test
-    fun should_returnNull_when_secondNumberIsZero() {
+    fun should_returnPositiveInfinity_when_firstNumberIsPositiveAndSecondNumberIsZero() {
         //given second number is zero
         val number1 = 50f
         val number2 = 0f
         //when find the divide summation
-        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(number1, number2)
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(
+            number1, number2
+        )
         //then check result
-        assertNull(divideSummation)
+        assertEquals(Float.POSITIVE_INFINITY, divideSummation)
     }
+
+
 
 }
