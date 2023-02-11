@@ -29,7 +29,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         val number1 = 50f
         val number2 = 25f
         //when find the divide summation
-        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(number1, number2)
         //then check result
         assertEquals(2f, divideSummation)
     }
@@ -40,7 +40,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         val number1 = -50f
         val number2 = 25f
         //when find the divide summation
-        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(number1, number2)
         //then check result
         assertEquals(-2f, divideSummation)
     }
@@ -51,7 +51,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         val number1 = 50f
         val number2 = -25f
         //when find the divide summation
-        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(number1, number2)
         //then check result
         assertEquals(-2f, divideSummation)
     }
@@ -62,20 +62,21 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         val number1 = -50f
         val number2 = -25f
         //when find the divide summation
-        val divideSummation = getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2)
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(number1, number2)
         //then check result
         assertEquals(2f, divideSummation)
     }
 
     @Test
-    fun should_throwExceptionCantDivideByZero_when_secondNumberIsZero() {
+    fun should_returnNull_when_secondNumberIsZero() {
         //given second number is zero
-        val number1 = -50f
+        val number1 = 50f
         val number2 = 0f
         //when find the divide summation
-        val divideSummation =
-            Executable { getCityHasCheapestInternetConnectionTest.getAverageOfCities(number1, number2) }
+        val divideSummation = getCityHasCheapestInternetConnectionTest.getThePercentage(number1, number2)
         //then check result
-        assertThrows(Exception::class.java, divideSummation)
+        assertNull(divideSummation)
     }
+
+
 }
