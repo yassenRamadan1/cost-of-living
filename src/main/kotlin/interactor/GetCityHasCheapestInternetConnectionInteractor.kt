@@ -11,6 +11,7 @@ class GetCityHasCheapestInternetConnectionInteractor(
             .filter(::excludeNullSalariesAndLowQualityData)
         val index = getTheIndexOfCheapestCityOfInternet(list)
         return list[index]
+
     }
 
     fun getTheIndexOfCheapestCityOfInternet(list: List<CityEntity>): Int {

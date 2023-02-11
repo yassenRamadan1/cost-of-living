@@ -2,6 +2,8 @@ package interactor
 
 import dataSource.CsvDataSource
 import dataSource.utils.CsvParser
+import fakedata.FakeData
+import io.github.serpro69.kfaker.Faker
 import model.CityEntity
 import org.junit.jupiter.api.Test
 
@@ -13,13 +15,13 @@ import org.junit.jupiter.api.TestInstance
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 internal class GetCityHasCheapestInternetConnectionInteractorTest {
     private lateinit var getCityHasCheapestInternetConnectionTest: GetCityHasCheapestInternetConnectionInteractor
-    private lateinit var csvParser: CsvParser
+//    private lateinit var csvParser: CsvParser
     private lateinit var dataSource: CostOfLivingDataSource
 
     @BeforeAll
     fun setup() {
-        csvParser = CsvParser()
-        dataSource = CsvDataSource(csvParser)
+        val fake = FakeData()
+        dataSource = fake
         getCityHasCheapestInternetConnectionTest = GetCityHasCheapestInternetConnectionInteractor(dataSource)
     }
 
@@ -103,7 +105,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         //when find the index
         val index = getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
         //then check result
-        assertEquals(689, index)
+        assertEquals(1, index)
     }
 
 

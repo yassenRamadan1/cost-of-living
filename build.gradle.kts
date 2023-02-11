@@ -17,6 +17,7 @@ dependencies {
     implementation("org.testng:testng:7.1.0")
     implementation("junit:junit:4.13.1")
     implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("io.github.serpro69:kotlin-faker:1.13.0")
     testImplementation(kotlin("test"))
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
