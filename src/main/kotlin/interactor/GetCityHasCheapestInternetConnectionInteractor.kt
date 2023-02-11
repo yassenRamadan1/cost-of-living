@@ -6,8 +6,11 @@ class GetCityHasCheapestInternetConnectionInteractor(
     private val dataSource: CostOfLivingDataSource,
 ) {
 
-    fun execute(): CityEntity? {
-        return null
+    fun execute(): CityEntity {
+        val list = dataSource.getAllCitiesData()
+            .filter(::excludeNullSalariesAndLowQualityData)
+        val index = getTheIndexOfCheapestCityOfInternet(list)
+        return list[index]
     }
 
     fun getTheIndexOfCheapestCityOfInternet(list: List<CityEntity>): Int {
