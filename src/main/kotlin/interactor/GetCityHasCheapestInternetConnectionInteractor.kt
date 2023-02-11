@@ -14,12 +14,9 @@ class GetCityHasCheapestInternetConnectionInteractor(
 
 
     fun getThePercentage(n1: Float, n2: Float): Float? =
-        if (isZero(n2))
-            null
-        else
-            n1 / n2
+        0f
 
-    fun isZero(n: Float): Boolean = n == 0f
+
 
     private fun excludeNullSalariesAndLowQualityData(city: CityEntity): Boolean {
         return city.averageMonthlyNetSalaryAfterTax != null && city.dataQuality
