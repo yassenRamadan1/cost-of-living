@@ -2,6 +2,7 @@ package interactor
 
 import dataSource.CsvDataSource
 import dataSource.utils.CsvParser
+import model.CityEntity
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
@@ -92,6 +93,25 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         assertEquals(Float.NEGATIVE_INFINITY, divideSummation)
     }
 
+    @Test
+    fun should_returnPositiveAndCorrectIndex_when_listIsNotNull() {
+        //given list of city entity
+        val list = dataSource.getAllCitiesData()
+        //when find the index
+        val index = getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
+        //then check result
+        assertEquals(4, index)
+    }
+
+    @Test
+    fun should_returnNull_when_listIsNull() {
+        //given list of city entity is null
+        val list: List<CityEntity>? = null
+        //when find the index
+        val index = getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
+        //then check result
+        assertNull(index)
+    }
 
 
 }

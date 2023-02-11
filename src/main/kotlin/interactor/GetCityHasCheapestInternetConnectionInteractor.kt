@@ -10,7 +10,7 @@ class GetCityHasCheapestInternetConnectionInteractor(
         return null
     }
 
-    fun getTheIndexOfCheapestCityOfInternet(list: List<CityEntity>): Int {
+    fun getTheIndexOfCheapestCityOfInternet(list: List<CityEntity>?): Int {
         return 0
     }
 
