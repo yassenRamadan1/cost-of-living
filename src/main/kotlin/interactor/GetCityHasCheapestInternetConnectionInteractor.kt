@@ -10,6 +10,9 @@ class GetCityHasCheapestInternetConnectionInteractor(
         return null
     }
 
+    fun getTheIndexOfCheapestCityOfInternet(list: List<CityEntity>): Int {
+        return 0
+    }
 
     fun getThePercentage(n1: Float, n2: Float): Float = n1 / n2
 

@@ -92,4 +92,6 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         assertEquals(Float.NEGATIVE_INFINITY, divideSummation)
     }
 
+
+
 }
