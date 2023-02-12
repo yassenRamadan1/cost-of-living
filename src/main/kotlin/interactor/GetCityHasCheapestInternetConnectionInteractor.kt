@@ -9,7 +9,7 @@ class GetCityHasCheapestInternetConnectionInteractor(
     fun execute(): CityEntity {
 
         val list = dataSource.getAllCitiesData()
-            .filter(::excludeNullSalariesAndLowQualityData)
+            .filter { it.averageMonthlyNetSalaryAfterTax != null && it.dataQuality }
 
         val index = getTheIndexOfCheapestCityOfInternet(list)
 
@@ -40,9 +40,6 @@ class GetCityHasCheapestInternetConnectionInteractor(
 
     fun getThePercentage(n1: Float, n2: Float): Float = n1 / n2
 
-
-    private fun excludeNullSalariesAndLowQualityData(city: CityEntity) =
-        city.averageMonthlyNetSalaryAfterTax != null && city.dataQuality
 
 }
 
