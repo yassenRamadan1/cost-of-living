@@ -148,5 +148,4 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         assertThrows(Exception::class.java, nullList)
     }
 
-
 }
