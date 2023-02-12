@@ -162,7 +162,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         //when find the cheapest city
         val cheapestCity = getCityHasCheapestInternetConnectionTest.execute()?.cityName
         //then check result
-        assertFalse(cheapestCity == "Tanta")
+        assertFalse(cheapestCity == "Paris")
     }
 
 
