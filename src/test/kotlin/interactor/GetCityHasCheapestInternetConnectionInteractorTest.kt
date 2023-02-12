@@ -133,6 +133,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
 
         //then check result
         assertThrows(Exception::class.java, emptyList)
+
     }
 
     @Test
@@ -147,5 +148,22 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
         //then check result
         assertThrows(Exception::class.java, nullList)
     }
+
+    @Test
+    fun should_returnTrue_when_CityNameIsCorrect() {
+        //when find the cheapest city
+        val cheapestCity = getCityHasCheapestInternetConnectionTest.execute()?.cityName
+        //then check result
+        assertTrue(cheapestCity == "Tanta")
+    }
+
+    @Test
+    fun should_returnFalse_when_CityNameIsWrong() {
+        //when find the cheapest city
+        val cheapestCity = getCityHasCheapestInternetConnectionTest.execute()?.cityName
+        //then check result
+        assertFalse(cheapestCity == "Tanta")
+    }
+
 
 }
