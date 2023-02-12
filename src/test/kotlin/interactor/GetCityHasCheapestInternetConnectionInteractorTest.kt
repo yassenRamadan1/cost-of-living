@@ -1,10 +1,6 @@
 package interactor
 
-import dataSource.CsvDataSource
-import dataSource.utils.CsvParser
 import fakedata.FakeData
-import io.github.serpro69.kfaker.Faker
-import model.CityEntity
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
