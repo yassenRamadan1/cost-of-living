@@ -8,7 +8,7 @@ fun main() {
     val dataSource: CostOfLivingDataSource = CsvDataSource(csvParser)
 
     val getCityHasCheapestInternetConnectionInteractor = GetCityHasCheapestInternetConnectionInteractor(dataSource)
-    println(getCityHasCheapestInternetConnectionInteractor.execute())
+    println(getCityHasCheapestInternetConnectionInteractor.execute().cityName)
 
 }
 
