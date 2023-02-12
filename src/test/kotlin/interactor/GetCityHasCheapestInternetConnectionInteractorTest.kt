@@ -123,13 +123,16 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
     }
 
     @Test
-    fun should_returnZero_when_listIsEmpty() {
+    fun should_returnThrowException_when_listIsEmpty() {
         //given empty list
         val list = emptyList<CityEntity>()
         //when check the list
-        val isEmpty = getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
+        val emptyList = Executable {
+            getCityHasCheapestInternetConnectionTest.getTheIndexOfCheapestCityOfInternet(list)
+        }
+
         //then check result
-        assertEquals(0, isEmpty)
+        assertThrows(Exception::class.java, emptyList)
     }
 
     @Test
