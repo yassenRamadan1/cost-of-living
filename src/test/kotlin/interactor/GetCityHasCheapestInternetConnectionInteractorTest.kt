@@ -152,7 +152,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
     @Test
     fun should_returnTrue_when_CityNameIsCorrect() {
         //when find the cheapest city
-        val cheapestCity = getCityHasCheapestInternetConnectionTest.execute()?.cityName
+        val cheapestCity = getCityHasCheapestInternetConnectionTest.execute().cityName
         //then check result
         assertTrue(cheapestCity == "Tanta")
     }
@@ -160,7 +160,7 @@ internal class GetCityHasCheapestInternetConnectionInteractorTest {
     @Test
     fun should_returnFalse_when_CityNameIsWrong() {
         //when find the cheapest city
-        val cheapestCity = getCityHasCheapestInternetConnectionTest.execute()?.cityName
+        val cheapestCity = getCityHasCheapestInternetConnectionTest.execute().cityName
         //then check result
         assertFalse(cheapestCity == "Paris")
     }
