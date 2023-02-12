@@ -12,9 +12,11 @@ class FakeData : CostOfLivingDataSource {
         val csvParser = CsvParser()
         val dataSource = CsvDataSource(csvParser)
         fakeDataList.addAll(
-            dataSource.getAllCitiesData().take(10)
+            dataSource.getAllCitiesData().filter { it.averageMonthlyNetSalaryAfterTax != null && it.dataQuality }
+                .take(10)
         )
     }
+
 
     override fun getAllCitiesData(): List<CityEntity> {
         return fakeDataList

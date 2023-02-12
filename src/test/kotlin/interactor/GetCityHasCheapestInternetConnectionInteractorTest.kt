@@ -10,14 +10,17 @@ import org.junit.jupiter.api.TestInstance
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 internal class GetCityHasCheapestInternetConnectionInteractorTest {
+
     private lateinit var getCityHasCheapestInternetConnectionTest: GetCityHasCheapestInternetConnectionInteractor
-//    private lateinit var csvParser: CsvParser
+
     private lateinit var dataSource: CostOfLivingDataSource
+
+    private lateinit var fakeData: FakeData
 
     @BeforeAll
     fun setup() {
-        val fake = FakeData()
-        dataSource = fake
+        fakeData = FakeData()
+        dataSource = fakeData
         getCityHasCheapestInternetConnectionTest = GetCityHasCheapestInternetConnectionInteractor(dataSource)
     }
 
