@@ -9,6 +9,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
     private lateinit var nullableCityEntityList: List<CityEntity>
     private lateinit var mixedCityEntityList: List<CityEntity>
     private val emptyCityEntityList = emptyList<CityEntity>()
+
     val newYorkLowQuality by lazy {
         CityEntity(
             cityName = "NewYork",
