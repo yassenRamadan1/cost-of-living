@@ -20,3 +20,4 @@ class FakeData : CostOfLivingDataSource {
         return fakeDataList
     }
 }
+
