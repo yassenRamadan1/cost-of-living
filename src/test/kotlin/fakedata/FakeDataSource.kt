@@ -15,16 +15,16 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             cityName = "NewYork",
             country = "England",
             mealsPrices = MealsPrices(
-                mealInexpensiveRestaurant = 10f,
-                mealFor2PeopleMidRangeRestaurant = 5f,
-                mealAtMcDonaldSOrEquivalent = 3f
+                mealInexpensiveRestaurant = 11f,
+                mealFor2PeopleMidRangeRestaurant = 6f,
+                mealAtMcDonaldSOrEquivalent = 2f,
             ),
             drinksPrices = DrinksPrices(
-                cappuccinoRegularInRestaurants = 7f,
-                cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
-                waterAThirdOfLiterBottleInRestaurants = 1f,
+                cappuccinoRegularInRestaurants = 8f,
+                cokePepsiAThirdOfLiterBottleInRestaurants = 4f,
+                waterAThirdOfLiterBottleInRestaurants = 1.5f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 3.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -33,15 +33,15 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.50f,
             ),
             foodPrices = FoodPrices(
-                loafOfFreshWhiteBread500g = 1f,
-                riceWhite1kg = 3f,
-                eggsRegular12 = 1f,
-                localCheese1kg = 6f,
-                chickenFillets1kg = 9f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 12f
+                loafOfFreshWhiteBread500g = 2f,
+                riceWhite1kg = 2f,
+                eggsRegular12 = 2f,
+                localCheese1kg = 5f,
+                chickenFillets1kg = 7f,
+                beefRound1kgOrEquivalentBackLegRedMeat = 10f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -51,13 +51,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1100f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -65,11 +65,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = 500000f,
@@ -77,10 +77,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = 800000f,
                 apartment3BedroomsOutsideOfCentre = 500000f,
                 pricePerSquareMeterToBuyApartmentInCityCentre = 2000f,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f,
             ),
             averageMonthlyNetSalaryAfterTax = 4000f,
-            dataQuality = false
+            dataQuality = false,
         )
     }
 
@@ -91,14 +91,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 10f,
                 mealFor2PeopleMidRangeRestaurant = 5f,
-                mealAtMcDonaldSOrEquivalent = 3f
+                mealAtMcDonaldSOrEquivalent = 3f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -107,7 +107,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 2f,
@@ -115,7 +115,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 2f,
                 localCheese1kg = 4f,
                 chickenFillets1kg = 4f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 6f
+                beefRound1kgOrEquivalentBackLegRedMeat = 6f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -125,13 +125,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -139,11 +139,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = 500000f,
@@ -151,10 +151,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = 800000f,
                 apartment3BedroomsOutsideOfCentre = 500000f,
                 pricePerSquareMeterToBuyApartmentInCityCentre = 2000f,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f,
             ),
             averageMonthlyNetSalaryAfterTax = 6000f,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -165,14 +165,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 10f,
                 mealFor2PeopleMidRangeRestaurant = 5f,
-                mealAtMcDonaldSOrEquivalent = 3f
+                mealAtMcDonaldSOrEquivalent = 3f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -181,7 +181,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 4f,
@@ -189,7 +189,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 24f,
                 localCheese1kg = 9f,
                 chickenFillets1kg = 16f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 20f
+                beefRound1kgOrEquivalentBackLegRedMeat = 20f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -199,13 +199,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -213,11 +213,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = 500000f,
@@ -225,10 +225,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = 800000f,
                 apartment3BedroomsOutsideOfCentre = 500000f,
                 pricePerSquareMeterToBuyApartmentInCityCentre = 2000f,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f,
             ),
             averageMonthlyNetSalaryAfterTax = 9000f,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -239,14 +239,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 10f,
                 mealFor2PeopleMidRangeRestaurant = 5f,
-                mealAtMcDonaldSOrEquivalent = 3f
+                mealAtMcDonaldSOrEquivalent = 3f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -255,7 +255,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 9f,
@@ -263,7 +263,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 3f,
                 localCheese1kg = 1f,
                 chickenFillets1kg = 12f,
-                beefRound1kgOrEquivalentBackLegRedMeat = null
+                beefRound1kgOrEquivalentBackLegRedMeat = null,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -273,13 +273,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -287,11 +287,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = null,
@@ -299,10 +299,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = null,
                 apartment3BedroomsOutsideOfCentre = null,
                 pricePerSquareMeterToBuyApartmentInCityCentre = null,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = null
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = null,
             ),
             averageMonthlyNetSalaryAfterTax = null,
-            dataQuality = false
+            dataQuality = false,
         )
     }
 
@@ -313,14 +313,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 10f,
                 mealFor2PeopleMidRangeRestaurant = 5f,
-                mealAtMcDonaldSOrEquivalent = 3f
+                mealAtMcDonaldSOrEquivalent = 3f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -329,7 +329,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 9f,
@@ -337,7 +337,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = null,
                 localCheese1kg = null,
                 chickenFillets1kg = 12f,
-                beefRound1kgOrEquivalentBackLegRedMeat = null
+                beefRound1kgOrEquivalentBackLegRedMeat = null,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -347,13 +347,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -361,11 +361,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = null,
@@ -373,10 +373,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = null,
                 apartment3BedroomsOutsideOfCentre = null,
                 pricePerSquareMeterToBuyApartmentInCityCentre = null,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = null
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = null,
             ),
             averageMonthlyNetSalaryAfterTax = null,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -387,14 +387,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 10f,
                 mealFor2PeopleMidRangeRestaurant = 5f,
-                mealAtMcDonaldSOrEquivalent = 3f
+                mealAtMcDonaldSOrEquivalent = 3f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -403,7 +403,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 9f,
@@ -411,7 +411,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 3f,
                 localCheese1kg = 1f,
                 chickenFillets1kg = 12f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 20f
+                beefRound1kgOrEquivalentBackLegRedMeat = 20f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -421,13 +421,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -435,11 +435,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = null,
@@ -447,10 +447,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = null,
                 apartment3BedroomsOutsideOfCentre = null,
                 pricePerSquareMeterToBuyApartmentInCityCentre = null,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = null
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = null,
             ),
             averageMonthlyNetSalaryAfterTax = null,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -462,14 +462,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 40f,
                 mealFor2PeopleMidRangeRestaurant = 35f,
-                mealAtMcDonaldSOrEquivalent = 10f
+                mealAtMcDonaldSOrEquivalent = 10f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -478,7 +478,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 9f,
@@ -486,7 +486,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 3f,
                 localCheese1kg = 1f,
                 chickenFillets1kg = 12f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 20f
+                beefRound1kgOrEquivalentBackLegRedMeat = 20f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -496,13 +496,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -510,11 +510,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = 500000f,
@@ -522,10 +522,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = 800000f,
                 apartment3BedroomsOutsideOfCentre = 500000f,
                 pricePerSquareMeterToBuyApartmentInCityCentre = 2000f,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f,
             ),
             averageMonthlyNetSalaryAfterTax = 6000f,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -536,14 +536,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 100f,
                 mealFor2PeopleMidRangeRestaurant = 60f,
-                mealAtMcDonaldSOrEquivalent = 30f
+                mealAtMcDonaldSOrEquivalent = 30f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -552,7 +552,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 9f,
@@ -560,7 +560,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 3f,
                 localCheese1kg = 1f,
                 chickenFillets1kg = 12f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 20f
+                beefRound1kgOrEquivalentBackLegRedMeat = 20f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -570,13 +570,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -584,11 +584,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = 500000f,
@@ -596,10 +596,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = 800000f,
                 apartment3BedroomsOutsideOfCentre = 500000f,
                 pricePerSquareMeterToBuyApartmentInCityCentre = 2000f,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f,
             ),
             averageMonthlyNetSalaryAfterTax = 6000f,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -610,14 +610,14 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             mealsPrices = MealsPrices(
                 mealInexpensiveRestaurant = 70f,
                 mealFor2PeopleMidRangeRestaurant = 35f,
-                mealAtMcDonaldSOrEquivalent = 25f
+                mealAtMcDonaldSOrEquivalent = 25f,
             ),
             drinksPrices = DrinksPrices(
                 cappuccinoRegularInRestaurants = 7f,
                 cokePepsiAThirdOfLiterBottleInRestaurants = 2f,
                 waterAThirdOfLiterBottleInRestaurants = 1f,
                 milkRegularOneLiter = 2f,
-                waterOneAndHalfLiterBottleAtTheMarket = 2.5f
+                waterOneAndHalfLiterBottleAtTheMarket = 2.5f,
             ),
             fruitAndVegetablesPrices = FruitAndVegetablesPrices(
                 apples1kg = 2f,
@@ -626,7 +626,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tomato1kg = 3f,
                 potato1kg = 1f,
                 onion1kg = 1f,
-                lettuceOneHead = 0.25f
+                lettuceOneHead = 0.25f,
             ),
             foodPrices = FoodPrices(
                 loafOfFreshWhiteBread500g = 9f,
@@ -634,7 +634,7 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 eggsRegular12 = 3f,
                 localCheese1kg = 1f,
                 chickenFillets1kg = 12f,
-                beefRound1kgOrEquivalentBackLegRedMeat = 20f
+                beefRound1kgOrEquivalentBackLegRedMeat = 20f,
             ),
             servicesPrices = ServicesPrices(
                 basicElectricityHeatingCoolingWaterGarbageFor85m2Apartment = 25f,
@@ -644,13 +644,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 tennisCourtRentOneHourOnWeekend = 100f,
                 cinemaInternationalReleaseOneSeat = 10f,
                 preschoolOrKindergartenFullDayPrivateMonthlyForOneChild = 100f,
-                internationalPrimarySchoolYearlyForOneChild = 1000f
+                internationalPrimarySchoolYearlyForOneChild = 1000f,
             ),
             clothesPrices = ClothesPrices(
                 onePairOfJeansLevis50oneOrSimilar = 60f,
                 oneSummerDressInAChainStoreZaraHAndM = 90f,
                 onePairOfNikeRunningShoesMidRange = 80f,
-                onePairOfMenLeatherBusinessShoes = 300f
+                onePairOfMenLeatherBusinessShoes = 300f,
             ),
             transportationsPrices = TransportationsPrices(
                 oneWayTicketLocalTransport = 5f,
@@ -658,11 +658,11 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 taxiStartNormalTariff = 20f,
                 taxi1kmNormalTariff = 30f,
                 taxi1hourWaitingNormalTariff = 60f,
-                gasolineOneLiter = 2f
+                gasolineOneLiter = 2f,
             ),
             carsPrices = CarsPrices(
                 volkswagenGolf_1_4_90kwTrendLineOrEquivalentNewCar = 300000f,
-                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f
+                toyotaCorollaSedan_1_6l_97kwComfortOrEquivalentNewCar = 250000f,
             ),
             realEstatesPrices = RealEstatesPrices(
                 apartmentOneBedroomInCityCentre = 500000f,
@@ -670,10 +670,10 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
                 apartment3BedroomsInCityCentre = 800000f,
                 apartment3BedroomsOutsideOfCentre = 500000f,
                 pricePerSquareMeterToBuyApartmentInCityCentre = 2000f,
-                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f
+                pricePerSquareMeterToBuyApartmentOutsideOfCentre = 1500f,
             ),
             averageMonthlyNetSalaryAfterTax = 6000f,
-            dataQuality = true
+            dataQuality = true,
         )
     }
 
@@ -682,11 +682,13 @@ class FakeDataSource(var dataSourceType: DataSourceType = DataSourceType.VALID) 
             alexHighQuality, newYorkLowQuality,
             lyonHighQuality, dubaiHighQuality, bernHighQuality, romeHighQuality,
         )
-        nullableCityEntityList = listOf(madridHighQualityNull, portoLowQualityNull, berlinHighQualityNull)
+        nullableCityEntityList = listOf(
+            madridHighQualityNull, portoLowQualityNull, berlinHighQualityNull,
+        )
 
         mixedCityEntityList = listOf(
             madridHighQualityNull, berlinHighQualityNull, portoLowQualityNull,
-            alexHighQuality, newYorkLowQuality, lyonHighQuality
+            alexHighQuality, newYorkLowQuality, lyonHighQuality,
         )
     }
 
