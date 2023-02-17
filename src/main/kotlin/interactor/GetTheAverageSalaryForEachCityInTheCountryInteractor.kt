@@ -2,7 +2,7 @@ package interactor
 
 import model.CityEntity
 
-class getTheAverageSalaryForEachCityInTheCountryInteractor(
+class GetTheAverageSalaryForEachCityInTheCountryInteractor(
     private val dataSource: CostOfLivingDataSource,
 ) {
     //the function will return a List of pairs each pair have city name and salary average for this city

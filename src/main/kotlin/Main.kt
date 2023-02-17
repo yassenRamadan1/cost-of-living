@@ -2,12 +2,12 @@
 import dataSource.CsvDataSource
 import dataSource.utils.CsvParser
 import interactor.CostOfLivingDataSource
-import interactor.getTheAverageSalaryForEachCityInTheCountryInteractor
+import interactor.GetTheAverageSalaryForEachCityInTheCountryInteractor
 
 fun main() {
     val csvParser = CsvParser()
     val dataSource: CostOfLivingDataSource = CsvDataSource(csvParser)
-    val getTheAverageSalaryForEachCityInTheCountry= getTheAverageSalaryForEachCityInTheCountryInteractor(dataSource)
+    val getTheAverageSalaryForEachCityInTheCountry= GetTheAverageSalaryForEachCityInTheCountryInteractor(dataSource)
     println(getTheAverageSalaryForEachCityInTheCountry.execute("egypt"))
 }
 private fun printSeparationLine(){
