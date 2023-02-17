@@ -8,7 +8,7 @@ fun main() {
     val csvParser = CsvParser()
     val dataSource: CostOfLivingDataSource = CsvDataSource(csvParser)
     val getTheAverageSalaryForEachCityInTheCountry= getTheAverageSalaryForEachCityInTheCountryInteractor(dataSource)
-    println(getTheAverageSalaryForEachCityInTheCountry.execute("Cuba"))
+    println(getTheAverageSalaryForEachCityInTheCountry.execute("egypt"))
 }
 private fun printSeparationLine(){
     print("\n_______________________________\n")
