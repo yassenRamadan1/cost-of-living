@@ -23,10 +23,11 @@ internal class GetTheAverageSalaryForEachCityInTheCountryInteractorTest {
     fun should_ReturnListOfPairsEachPairContainCityNameAndSalaryAverage_whenCountryNameIsLowerCase() {
         //given country name in lower case
         val countryName = "egypt"
+        val expectedOutput = listOf(Pair("Alex", 6000f))
         //when find the city name and salary average
         val cityAndSalaryAverage = GetTheAverageSalaryForEachCityInTheCountryInteractor(fakeData).execute(countryName)
         //then check return a List of pairs each pair have city name and salary average for this city
-        assertEquals(listOf(Pair("Alex", 6000f)).toString(), cityAndSalaryAverage.toString())
+        assertEquals(expectedOutput, cityAndSalaryAverage)
 
     }
 
@@ -34,20 +35,22 @@ internal class GetTheAverageSalaryForEachCityInTheCountryInteractorTest {
     fun should_ReturnListOfPairsEachPairContainCityNameAndSalaryAverage_whenCountryNameIsUpperCase() {
         //given country name in upper case
         val countryName = "EGYPT"
+        val expectedOutput = listOf(Pair("Alex", 6000f))
         //when find the city name and salary average
         val cityAndSalaryAverage = GetTheAverageSalaryForEachCityInTheCountryInteractor(fakeData).execute(countryName)
         //then check return a List of pairs each pair have city name and salary average for this city
-        assertEquals(listOf(Pair("Alex", 6000f)).toString(), cityAndSalaryAverage.toString())
+        assertEquals(expectedOutput, cityAndSalaryAverage)
     }
 
     @Test
     fun should_ReturnListOfPairsEachPairContainCityNameAndSalaryAverage_whenCountryNameIsMixedCase() {
         //given country name in mix case
         val countryName = "Egypt"
+        val expectedOutput = listOf(Pair("Alex", 6000f))
         //when  the city name and salary average
         val cityAndSalaryAverage = GetTheAverageSalaryForEachCityInTheCountryInteractor(fakeData).execute(countryName)
         //then check return a List of pairs each pair have city name and salary average for this city
-        assertEquals(listOf(Pair("Alex", 6000f)).toString(), cityAndSalaryAverage.toString())
+        assertEquals(expectedOutput, cityAndSalaryAverage)
     }
 
     @Test
@@ -55,7 +58,7 @@ internal class GetTheAverageSalaryForEachCityInTheCountryInteractorTest {
         //given empty country name
         val countryName = ""
         //when  the city name and salary average
-        val cityAndSalaryAverageExecutable: Executable = Executable {
+        val cityAndSalaryAverageExecutable = Executable {
             GetTheAverageSalaryForEachCityInTheCountryInteractor(fakeData)
                 .execute(countryName)
         }
@@ -68,7 +71,7 @@ internal class GetTheAverageSalaryForEachCityInTheCountryInteractorTest {
         //given wrong country name
         val countryName = "test wrong name"
         //when  the city name and salary average
-        val cityAndSalaryAverageExecutable: Executable = Executable {
+        val cityAndSalaryAverageExecutable = Executable {
             GetTheAverageSalaryForEachCityInTheCountryInteractor(fakeData)
                 .execute(countryName)
         }
