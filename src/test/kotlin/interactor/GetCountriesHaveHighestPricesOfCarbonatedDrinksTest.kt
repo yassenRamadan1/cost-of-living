@@ -39,7 +39,7 @@ internal class GetCountriesHaveHighestPricesOfCarbonatedDrinksTest {
     }
 
     @Test
-    fun should_ReturnEmptyList_when_theInputIsNegativeValue() {
+    fun should_ReturnThrow_when_theInputIsNegativeValue() {
         //given negative value of limit
         val limit = -1
         //when the limit is negative value
